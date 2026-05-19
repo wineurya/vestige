@@ -1,6 +1,6 @@
 ﻿# Vestige — product brief
 
-Master decisions sourced from the Proof MVP research report. **Vestige** is the working product name: one coined word evoking *timestamped move-out evidence*, not generic "proof" or a two-word brand.
+Master decisions sourced from the Proof MVP research report. **Vestige** is the product name: one word — the trace of how a unit looked before you left — not a compound like Stamp-out, Move-out, or Deposit-shield.
 
 ## Positioning
 

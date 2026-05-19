@@ -1,8 +1,8 @@
-﻿# Stampout
+﻿# Vestige
 
 **Protect your deposit before the argument starts.**
 
-Stampout is a renter-owned evidence packet tool: guided room-by-room photos, issue notes, and a timestamped PDF you can keep — no app install, no account to start.
+Vestige is a renter-owned evidence packet tool: guided room-by-room photos, issue notes, and a timestamped PDF you can keep — no app install, no account to start.
 
 This repository contains the **MVP low-fidelity wireframes** and product documentation for the one-day build described in the research brief.
 
@@ -14,7 +14,7 @@ For day-to-day browser testing, use the copy in Documents:
 C:\Users\Wineury Almonte\Documents\vestige
 ```
 
-See [LOCAL-TESTING.md](LOCAL-TESTING.md) there, or run `open-wireframes.ps1` to launch the hub.
+See `LOCAL-TESTING.md` there, or run `open-wireframes.ps1` to launch the hub.
 
 ## View wireframes (repo)
 
@@ -48,7 +48,7 @@ npx --yes serve wireframes
 
 ## Name
 
-**Stampout** — timestamped move-out documentation. Chosen to avoid generic "proof" naming and two-word app conventions from the research phase.
+**Vestige** — what remains of the unit's condition when you hand back the keys. One word, not a mashed pair (no Stamp-out, Move-out, Deposit-packet).
 
 ## Status
 
