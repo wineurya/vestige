@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>02 Create report | Stampout wireframe</title>
+  <link rel="stylesheet" href="css/wireframe.css" />
+</head>
+<body>
+  <nav class="wf-toolbar">
+    <a href="01-home.html">Back</a>
+    <span>02 / 06 Create report</span>
+    <a href="03-room-list.html">Next</a>
+  </nav>
+  <section class="wf-stage">
+    <article class="phone">
+      <header class="phone-notch"><span></span></header>
+      <section class="phone-body">
+        <header class="wf-header">
+          <a class="wf-back" href="01-home.html" aria-label="Back">&larr;</a>
+          <span class="wf-title">New report</span>
+        </header>
+
+        <p class="wf-lead">No account required. Your photos stay on this device until you export.</p>
+
+        <p class="wf-label">Report type</p>
+        <p class="wf-anno">Segmented control (Mobbin: common form pattern)</p>
+        <section class="wf-segment" aria-label="Move type">
+          <button type="button" class="active">Move-in</button>
+          <button type="button">Move-out</button>
+        </section>
+
+        <section class="wf-field">
+          <label for="state">State</label>
+          <input class="wf-input" id="state" type="text" value="California" readonly />
+        </section>
+        <section class="wf-field">
+          <label for="address">Street address</label>
+          <input class="wf-input" id="address" type="text" value="123 Oak St, Apt 4B" readonly />
+        </section>
+        <section class="wf-field">
+          <label for="unit">Unit number <span class="badge">optional</span></label>
+          <input class="wf-input" id="unit" type="text" placeholder="4B" readonly />
+        </section>
+        <section class="wf-field">
+          <label for="forward">Forwarding address <span class="badge">optional</span></label>
+          <input class="wf-input" id="forward" type="text" placeholder="Where to return deposit" readonly />
+          <p class="wf-anno">Recommended after move-out per tenant-help guidance</p>
+        </section>
+
+        <footer class="wf-footer-actions">
+          <a class="wf-btn accent" href="03-room-list.html">Create report</a>
+        </footer>
+      </section>
+    </article>
+  </section>
+</body>
+</html>

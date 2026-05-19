@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>05 Review | Stampout wireframe</title>
+  <link rel="stylesheet" href="css/wireframe.css" />
+</head>
+<body>
+  <nav class="wf-toolbar">
+    <a href="03-room-list.html">Back</a>
+    <span>05 / 06 Review</span>
+    <a href="06-export.html">Next</a>
+  </nav>
+  <section class="wf-stage">
+    <article class="phone">
+      <header class="phone-notch"><span></span></header>
+      <section class="phone-body">
+        <header class="wf-header">
+          <a class="wf-back" href="03-room-list.html">&larr;</a>
+          <span class="wf-title">Review</span>
+        </header>
+
+        <p class="wf-lead">You are building a timestamped record, not writing a legal brief.</p>
+        <p class="wf-anno">Mobbin ref: Manus "Task Progress" checklist with completion counts</p>
+
+        <section class="wf-flag">
+          <span>!</span>
+          <span><strong>Bedroom</strong> — missing wide shot</span>
+        </section>
+        <section class="wf-flag">
+          <span>!</span>
+          <span><strong>Living room</strong> — not started</span>
+        </section>
+        <section class="wf-flag ok">
+          <span>OK</span>
+          <span><strong>Kitchen, Bathroom</strong> — ready</span>
+        </section>
+
+        <p class="wf-label">Report summary</p>
+        <section class="wf-box solid">
+          <p style="margin:0 0 0.35rem"><strong>Move-out</strong> · California</p>
+          <p style="margin:0 0 0.35rem;font-size:0.85rem;color:var(--muted)">123 Oak St, Apt 4B</p>
+          <p style="margin:0;font-size:0.85rem">7 photos · 2 rooms complete · May 19, 2026</p>
+        </section>
+
+        <ul style="font-size:0.85rem;color:var(--muted);padding-left:1.1rem;margin:0 0 1rem">
+          <li>Strip GPS from exported PDF metadata</li>
+          <li>Include photo timestamps per acceptance criteria</li>
+        </ul>
+
+        <footer class="wf-footer-actions">
+          <a class="wf-btn accent" href="06-export.html">Generate PDF</a>
+          <a class="wf-btn ghost" href="03-room-list.html">Back to rooms</a>
+        </footer>
+      </section>
+    </article>
+  </section>
+</body>
+</html>
