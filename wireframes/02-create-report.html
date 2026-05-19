@@ -3,60 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>02 Create report | Cavera</title>
+  <title>Create report | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <nav class="wf-prototype">
-    <a href="01-home.html">Back</a>
-    <strong>02 / 06</strong> Create report
-    <a href="03-room-list.html">Next</a>
+    <a href="01-home.html">← Back</a>
+    <strong>02 · Create report</strong>
+    <a href="03-room-list.html">Next →</a>
   </nav>
 
   <section class="app">
-    <header class="app-topbar">
-      <a href="01-home.html" class="site-logo">CAVERA</a>
-      <p class="app-stepper">
+    <header class="app-header">
+      <span class="ph ph--logo app-header__logo" aria-hidden="true"></span>
+      <nav class="stepper-bar" aria-label="Progress">
         <span class="active">Setup</span>
         <span>Rooms</span>
         <span>Capture</span>
         <span>Export</span>
-      </p>
-      <p class="app-topbar-actions">No account · Local only</p>
+      </nav>
+      <span class="app-header__spacer"></span>
+      <span class="app-header__pill">No account</span>
+      <span class="ph ph--avatar" aria-hidden="true"></span>
     </header>
 
-    <section class="app-body">
-      <main class="app-main narrow">
-        <header class="page-head">
-          <h1>New report</h1>
-          <p>No account required. Photos stay in your browser until you export.</p>
-        </header>
+    <section class="app-layout">
+      <aside class="app-sidebar">
+        <p class="sidebar-report">
+          <strong>New report</strong>
+          <span>Step 1 of 4</span>
+        </p>
+        <ul class="sidebar-steps">
+          <li><a href="#" class="active"><span class="step-dot"></span> Report details</a></li>
+          <li><a href="03-room-list.html"><span class="step-dot"></span> Rooms</a></li>
+          <li><a href="04-capture-room.html"><span class="step-dot"></span> Capture</a></li>
+          <li><a href="06-export.html"><span class="step-dot"></span> Export</a></li>
+        </ul>
+      </aside>
 
-        <section class="wf-card form-card">
-          <p class="wf-label">Report type</p>
-          <p class="wf-segment">
-            <button type="button" class="active">Move-in</button>
-            <button type="button">Move-out</button>
-          </p>
+      <main class="app-main app-main--center app-main--narrow">
+        <section class="page-inner">
+          <header class="page-top">
+            <div>
+              <h1>Start your report</h1>
+              <p>We'll walk room by room. Nothing leaves your browser until you export.</p>
+            </div>
+          </header>
 
-          <p class="wf-field">
-            <label for="state">State</label>
-            <input class="wf-input" id="state" type="text" value="California" readonly />
-          </p>
-          <p class="wf-field">
-            <label for="address">Street address</label>
-            <input class="wf-input" id="address" type="text" value="123 Oak St" readonly />
-          </p>
-          <p class="wf-field">
-            <label for="unit">Unit <span class="badge">optional</span></label>
-            <input class="wf-input" id="unit" type="text" value="4B" readonly />
-          </p>
-          <p class="wf-field">
-            <label for="forward">Forwarding address <span class="badge">optional</span></label>
-            <input class="wf-input" id="forward" type="text" placeholder="For deposit return" readonly />
-          </p>
-
-          <p><a class="wf-btn accent block" href="03-room-list.html">Create report</a></p>
+          <section class="card card--form">
+            <p class="field">
+              <label>Report type</label>
+              <span class="segment">
+                <button type="button" class="active">Move-in</button>
+                <button type="button">Move-out</button>
+              </span>
+            </p>
+            <p class="field">
+              <label for="state">State</label>
+              <input class="input" id="state" type="text" value="California" readonly />
+            </p>
+            <p class="field">
+              <label for="address">Street address</label>
+              <input class="input" id="address" type="text" value="123 Oak Street" readonly />
+            </p>
+            <p class="field">
+              <label for="unit">Unit <span class="badge-tag">optional</span></label>
+              <input class="input" id="unit" type="text" value="Apt 4B" readonly />
+            </p>
+            <p class="field">
+              <label for="fwd">Forwarding address <span class="badge-tag">optional</span></label>
+              <input class="input" id="fwd" type="text" placeholder="Where to return your deposit" readonly />
+              <span class="hint">Recommended after move-out</span>
+            </p>
+            <p><a class="btn btn--primary btn--block btn--lg" href="03-room-list.html">Create report</a></p>
+          </section>
         </section>
       </main>
     </section>

@@ -3,64 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>05 Review | Cavera</title>
+  <title>Review | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <nav class="wf-prototype">
-    <a href="03-room-list.html">Back</a>
-    <strong>05 / 06</strong> Review
-    <a href="06-export.html">Next</a>
+    <a href="03-room-list.html">← Back</a>
+    <strong>05 · Review</strong>
+    <a href="06-export.html">Next →</a>
   </nav>
 
   <section class="app">
-    <header class="app-topbar">
-      <a href="01-home.html" class="site-logo">CAVERA</a>
-      <p class="app-stepper">
+    <header class="app-header">
+      <span class="ph ph--logo app-header__logo" aria-hidden="true"></span>
+      <nav class="stepper-bar">
         <span class="done">Setup</span>
         <span class="done">Rooms</span>
         <span class="done">Capture</span>
         <span class="active">Export</span>
-      </p>
+      </nav>
+      <span class="app-header__spacer"></span>
+      <span class="ph ph--avatar" aria-hidden="true"></span>
     </header>
 
-    <section class="app-body">
+    <section class="app-layout">
       <aside class="app-sidebar">
-        <p class="report-meta"><strong>Review</strong>123 Oak St · Move-out</p>
+        <p class="sidebar-report"><strong>Review</strong><span>123 Oak St · Move-out</span></p>
       </aside>
 
       <main class="app-main">
-        <header class="page-head">
-          <h1>Review before export</h1>
-          <p>You are building a timestamped record, not a legal brief.</p>
-        </header>
+        <section class="page-inner">
+          <header class="page-top">
+            <div>
+              <h1>Review your report</h1>
+              <p>A timestamped record — not a legal brief. Fix flags before exporting.</p>
+            </div>
+          </header>
 
-        <section class="wf-split">
-          <section>
-            <p class="wf-flag"><span>!</span><span><strong>Bedroom</strong> — missing wide shot</span></p>
-            <p class="wf-flag"><span>!</span><span><strong>Living room</strong> — not started</span></p>
-            <p class="wf-flag ok"><span>OK</span><span><strong>Kitchen, Bathroom</strong> — ready</span></p>
+          <section class="review-split">
+            <section>
+              <p class="alert alert--warn"><span>!</span><span><strong>Bedroom</strong> — add a wide shot of the full room</span></p>
+              <p class="alert alert--warn"><span>!</span><span><strong>Living room</strong> — not started</span></p>
+              <p class="alert alert--ok"><span>✓</span><span><strong>Kitchen, Bathroom</strong> — ready to export</span></p>
+            </section>
+
+            <section class="table-wrap">
+              <table class="data">
+                <thead>
+                  <tr><th>Room</th><th>Photos</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Kitchen</td><td>4</td><td>Ready</td></tr>
+                  <tr><td>Bathroom</td><td>3</td><td>Ready</td></tr>
+                  <tr><td>Bedroom</td><td>1</td><td>Missing wide shot</td></tr>
+                  <tr><td>Living room</td><td>0</td><td>Not started</td></tr>
+                  <tr><td>Hallway</td><td>0</td><td>Not started</td></tr>
+                </tbody>
+              </table>
+            </section>
           </section>
 
-          <section>
-            <table class="wf-table">
-              <thead>
-                <tr><th>Room</th><th>Photos</th><th>Status</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Kitchen</td><td>4</td><td>Ready</td></tr>
-                <tr><td>Bathroom</td><td>3</td><td>Ready</td></tr>
-                <tr><td>Bedroom</td><td>1</td><td>Missing wide shot</td></tr>
-                <tr><td>Living room</td><td>0</td><td>Not started</td></tr>
-              </tbody>
-            </table>
-          </section>
+          <footer class="sticky-footer">
+            <a class="btn btn--ghost" href="03-room-list.html">Back to rooms</a>
+            <a class="btn btn--primary" href="06-export.html">Generate PDF</a>
+          </footer>
         </section>
-
-        <footer class="app-bar-bottom">
-          <a class="wf-btn ghost" href="03-room-list.html">Back to rooms</a>
-          <a class="wf-btn accent" href="06-export.html">Generate PDF</a>
-        </footer>
       </main>
     </section>
   </section>

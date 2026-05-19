@@ -3,58 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>06 Export | Cavera</title>
+  <title>Export | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <nav class="wf-prototype">
-    <a href="05-review.html">Back</a>
-    <strong>06 / 06</strong> Export
+    <a href="05-review.html">← Back</a>
+    <strong>06 · Export</strong>
     <a href="index.html">Hub</a>
   </nav>
 
   <section class="app">
-    <header class="app-topbar">
-      <a href="01-home.html" class="site-logo">CAVERA</a>
-      <p class="app-stepper">
+    <header class="app-header">
+      <span class="ph ph--logo app-header__logo" aria-hidden="true"></span>
+      <nav class="stepper-bar">
         <span class="done">Setup</span>
         <span class="done">Rooms</span>
         <span class="done">Capture</span>
         <span class="active">Export</span>
-      </p>
+      </nav>
+      <span class="app-header__spacer"></span>
+      <span class="ph ph--avatar" aria-hidden="true"></span>
     </header>
 
-    <section class="app-body">
-      <main class="app-main">
-        <header class="page-head">
-          <p class="wf-success-icon" aria-hidden="true">&#10003;</p>
-          <h1>Your packet is ready</h1>
-          <p>Address, report date, room summaries, timestamps, and notes.</p>
-        </header>
-
-        <section class="wf-split export">
-          <section class="wf-pdf-preview">
-            <p class="doc-title">Cavera — Move-out report</p>
-            <p class="row"><span>123 Oak St, Apt 4B</span><span>CA</span></p>
-            <p class="row"><span>Report date</span><span>May 19, 2026</span></p>
-            <figure class="wf-img">PDF page preview</figure>
-            <p class="row"><span>Kitchen</span><span>4 photos</span></p>
-            <p class="row"><span>Bathroom</span><span>3 photos</span></p>
+    <main class="app-main">
+      <section class="page-inner">
+        <section class="export-layout">
+          <section class="card" style="padding:24px">
+            <p class="wf-label" style="margin-bottom:12px">PDF preview</p>
+            <span class="ph ph--pdf" aria-label="PDF document preview"></span>
           </section>
 
-          <aside class="wf-card">
-            <p><a class="wf-btn accent block" href="#">Download PDF</a></p>
-            <p><a class="wf-btn secondary block" href="#">Email to myself</a></p>
-            <p style="font-size:0.85rem;color:var(--muted)"><strong>Saved.</strong> Keep one copy off this device.</p>
-            <hr style="border:none;border-top:1px solid var(--line);margin:1.25rem 0" />
-            <p class="wf-label">Validation (post-export)</p>
-            <p style="font-size:0.85rem">Cloud backup + compare — $9 <span class="badge">fake door</span></p>
-            <p style="font-size:0.85rem;color:var(--muted)">Use again at next move? Yes / No</p>
-            <p style="margin-top:1rem"><a class="wf-btn ghost block" href="#">Delete this report</a></p>
+          <aside class="export-panel">
+            <span class="success-badge" aria-hidden="true"></span>
+            <h2>Your packet is ready</h2>
+            <p>Includes address, date, room summaries, photo timestamps, and notes. GPS stripped from export.</p>
+            <p><a class="btn btn--primary btn--block btn--lg" href="#">Download PDF</a></p>
+            <p style="margin-top:12px"><a class="btn btn--secondary btn--block" href="#">Email to myself</a></p>
+            <p style="font-size:13px;color:var(--muted);margin-top:20px"><strong>Saved locally.</strong> Keep a copy off this device.</p>
+            <hr style="border:none;border-top:1px solid var(--line);margin:24px 0" />
+            <p style="font-size:13px;color:var(--muted)">Cloud backup + move-in compare <span class="badge-tag">$9</span></p>
+            <p style="margin-top:16px"><a class="btn btn--ghost btn--block" href="#">Delete this report</a></p>
           </aside>
         </section>
-      </main>
-    </section>
+      </section>
+    </main>
   </section>
 </body>
 </html>

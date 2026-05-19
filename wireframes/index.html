@@ -1,57 +1,42 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cavera — Wireframe hub</title>
+  <title>Cavera — Wireframes</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <main class="hub">
-    <p class="wf-label">Low-fidelity wireframes · Web app</p>
-    <h1>Cavera</h1>
-    <p class="tagline">Desktop-first web application. Responsive in the browser — marketing site plus app shell with sidebar.</p>
+    <span class="hub-badge">Medium fidelity · Web app</span>
+    <h1>Cavera wireframes</h1>
+    <p class="lead">Mobbin-informed layouts. Grey blocks = 12% image placeholders.</p>
 
     <section class="hub-grid">
-      <section class="panel">
-        <h2>Views</h2>
-        <ol class="screen-list">
-          <li>
-            <a href="01-home.html">01 — Marketing home</a>
-            <span>Public site: nav, split hero, footer</span>
-          </li>
-          <li>
-            <a href="02-create-report.html">02 — Create report</a>
-            <span>App: top stepper + centered form</span>
-          </li>
-          <li>
-            <a href="03-room-list.html">03 — Room overview</a>
-            <span>App: sidebar + room card grid</span>
-          </li>
-          <li>
-            <a href="04-capture-room.html">04 — Capture room</a>
-            <span>App: sidebar + two-column workspace</span>
-          </li>
-          <li>
-            <a href="05-review.html">05 — Review</a>
-            <span>App: flags + data table</span>
-          </li>
-          <li>
-            <a href="06-export.html">06 — Export</a>
-            <span>App: PDF preview + action panel</span>
-          </li>
-        </ol>
-      </section>
-
-      <section class="panel">
-        <h2>Routes (planned)</h2>
-        <pre class="flow-pre">/                 marketing home
-/start            create report
-/report/:id       rooms overview
-/report/:id/:room capture
-/report/:id/review
-/report/:id/export</pre>
-      </section>
+      <a class="hub-card" href="01-home.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>01 Marketing home</strong><span>Pipedrive / Fibery split hero</span></span>
+      </a>
+      <a class="hub-card" href="02-create-report.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>02 Create report</strong><span>Gusto / Mercury onboarding</span></span>
+      </a>
+      <a class="hub-card" href="03-room-list.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>03 Room overview</strong><span>Airbnb sidebar + card grid</span></span>
+      </a>
+      <a class="hub-card" href="04-capture-room.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>04 Capture room</strong><span>Peerspace upload + grid</span></span>
+      </a>
+      <a class="hub-card" href="05-review.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>05 Review</strong><span>Alerts + data table</span></span>
+      </a>
+      <a class="hub-card" href="06-export.html">
+        <span class="ph ph--thumb-square" aria-hidden="true"></span>
+        <span><strong>06 Export</strong><span>Confluence / Behance success</span></span>
+      </a>
     </section>
   </main>
 </body>

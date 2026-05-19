@@ -3,40 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>03 Rooms | Cavera</title>
+  <title>Rooms | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <nav class="wf-prototype">
-    <a href="02-create-report.html">Back</a>
-    <strong>03 / 06</strong> Room overview
-    <a href="04-capture-room.html">Next</a>
+    <a href="02-create-report.html">← Back</a>
+    <strong>03 · Rooms</strong>
+    <a href="04-capture-room.html">Next →</a>
   </nav>
 
   <section class="app">
-    <header class="app-topbar">
-      <a href="01-home.html" class="site-logo">CAVERA</a>
-      <p class="app-stepper">
+    <header class="app-header">
+      <span class="ph ph--logo app-header__logo" aria-hidden="true"></span>
+      <nav class="stepper-bar">
         <span class="done">Setup</span>
         <span class="active">Rooms</span>
         <span>Capture</span>
         <span>Export</span>
-      </p>
-      <p class="app-topbar-actions"><a href="05-review.html">Review</a></p>
+      </nav>
+      <span class="app-header__spacer"></span>
+      <a class="btn btn--secondary" href="05-review.html">Review</a>
+      <span class="ph ph--avatar" aria-hidden="true"></span>
     </header>
 
-    <section class="app-body">
+    <section class="app-layout">
       <aside class="app-sidebar">
-        <p class="report-meta">
-          <strong>Move-out report</strong>
-          123 Oak St, Apt 4B<br />California
+        <p class="sidebar-report">
+          <strong>Move-out</strong>
+          <span>123 Oak St, Apt 4B<br />California</span>
         </p>
-        <p class="wf-progress"><span style="width:28%"></span></p>
-        <p style="font-size:0.8rem;color:var(--muted);margin:0 0 1rem">2 of 7 rooms</p>
-        <ul class="app-nav">
-          <li><a href="04-capture-room.html" class="active">Kitchen <small>4 photos</small></a></li>
-          <li><a href="04-capture-room.html">Bathroom <small>3 photos</small></a></li>
-          <li><a href="04-capture-room.html">Bedroom <small>needs wide shot</small></a></li>
+        <p class="progress"><span style="width:28%"></span></p>
+        <p class="progress-label">2 of 7 rooms complete</p>
+        <ul class="sidebar-rooms">
+          <li><a href="04-capture-room.html" class="active">Kitchen<small>4 photos</small></a></li>
+          <li><a href="04-capture-room.html">Bathroom<small>3 photos</small></a></li>
+          <li><a href="04-capture-room.html">Bedroom<small>Missing wide shot</small></a></li>
           <li><a href="04-capture-room.html">Living room</a></li>
           <li><a href="04-capture-room.html">Hallway</a></li>
           <li><a href="04-capture-room.html">Entry</a></li>
@@ -45,25 +47,49 @@
       </aside>
 
       <main class="app-main">
-        <header class="page-head">
-          <h1>Rooms</h1>
-          <p>Capture wide shots first. Then close-ups of any issues.</p>
-        </header>
+        <section class="page-inner">
+          <header class="page-top">
+            <div>
+              <h1>Document each room</h1>
+              <p>Wide shots first, then close-ups of anything damaged or pre-existing.</p>
+            </div>
+            <p class="page-actions">
+              <a class="btn btn--ghost" href="#">+ Add room</a>
+            </p>
+          </header>
 
-        <section class="wf-grid-rooms">
-          <a class="wf-room-card done" href="04-capture-room.html"><strong>Kitchen</strong><small>4 photos · 1 issue</small></a>
-          <a class="wf-room-card done" href="04-capture-room.html"><strong>Bathroom</strong><small>3 photos · OK</small></a>
-          <a class="wf-room-card warn" href="04-capture-room.html"><strong>Bedroom</strong><small>No wide shot</small></a>
-          <a class="wf-room-card" href="04-capture-room.html"><strong>Living room</strong><small>Not started</small></a>
-          <a class="wf-room-card" href="04-capture-room.html"><strong>Hallway</strong><small>Not started</small></a>
-          <a class="wf-room-card" href="04-capture-room.html"><strong>Entry</strong><small>Not started</small></a>
-          <a class="wf-room-card" href="04-capture-room.html"><strong>Other</strong><small>Add custom</small></a>
+          <section class="room-grid">
+            <a class="room-card" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Kitchen</strong><span>4 photos · 1 issue noted</span></span>
+            </a>
+            <a class="room-card" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Bathroom</strong><span>3 photos · Complete</span></span>
+            </a>
+            <a class="room-card room-card--warn" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Bedroom</strong><span>1 photo</span></span>
+            </a>
+            <a class="room-card" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Living room</strong><span>Not started</span></span>
+            </a>
+            <a class="room-card" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Hallway</strong><span>Not started</span></span>
+            </a>
+            <a class="room-card" href="04-capture-room.html">
+              <span class="ph ph--card" aria-hidden="true"></span>
+              <span class="room-card__body"><strong>Entry</strong><span>Not started</span></span>
+            </a>
+          </section>
+
+          <footer class="sticky-footer">
+            <a class="btn btn--ghost" href="02-create-report.html">Back</a>
+            <a class="btn btn--primary" href="05-review.html">Review and export</a>
+          </footer>
         </section>
-
-        <footer class="app-bar-bottom">
-          <a class="wf-btn ghost" href="#">+ Add room</a>
-          <a class="wf-btn accent" href="05-review.html">Review and export</a>
-        </footer>
       </main>
     </section>
   </section>

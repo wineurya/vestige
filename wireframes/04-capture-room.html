@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>04 Capture | Cavera</title>
+  <title>Capture | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <nav class="wf-prototype">
-    <a href="03-room-list.html">Back</a>
-    <strong>04 / 06</strong> Capture room
+    <a href="03-room-list.html">← Back</a>
+    <strong>04 · Capture</strong>
     <a href="03-room-list.html">Done</a>
   </nav>
 
   <section class="app">
-    <header class="app-topbar">
-      <a href="01-home.html" class="site-logo">CAVERA</a>
-      <p class="app-stepper">
+    <header class="app-header">
+      <span class="ph ph--logo app-header__logo" aria-hidden="true"></span>
+      <nav class="stepper-bar">
         <span class="done">Setup</span>
         <span class="done">Rooms</span>
         <span class="active">Capture</span>
         <span>Export</span>
-      </p>
-      <p class="app-topbar-actions"><a href="03-room-list.html">All rooms</a></p>
+      </nav>
+      <span class="app-header__spacer"></span>
+      <a class="btn btn--secondary" href="03-room-list.html">All rooms</a>
+      <span class="ph ph--avatar" aria-hidden="true"></span>
     </header>
 
-    <section class="app-body">
+    <section class="app-layout">
       <aside class="app-sidebar">
-        <p class="report-meta"><strong>Kitchen</strong>Room 1 of 7</p>
-        <ul class="app-nav">
+        <p class="sidebar-report"><strong>Kitchen</strong><span>Room 1 of 7</span></p>
+        <ul class="sidebar-rooms">
           <li><a href="#" class="active">Kitchen</a></li>
           <li><a href="#">Bathroom</a></li>
           <li><a href="#">Bedroom</a></li>
@@ -37,41 +39,49 @@
       </aside>
 
       <main class="app-main">
-        <header class="toolbar-row page-head">
-          <h1>Kitchen</h1>
-          <p>
-            <a class="wf-btn accent" href="#">Upload photos</a>
-            <a class="wf-btn secondary" href="#">Mark issue</a>
-            <a class="wf-btn ghost" href="03-room-list.html">Room OK</a>
-          </p>
-        </header>
-
-        <section class="wf-split">
-          <section>
-            <p class="wf-label">What to capture</p>
-            <p class="wf-chips">
-              <span class="wf-chip active">Walls</span>
-              <span class="wf-chip">Floors</span>
-              <span class="wf-chip">Ceiling</span>
-              <span class="wf-chip">Windows</span>
-              <span class="wf-chip">Appliances</span>
-              <span class="wf-chip">Cabinets</span>
+        <section class="page-inner">
+          <header class="page-top">
+            <div>
+              <h1>Kitchen</h1>
+              <p>Add a wide shot of the whole room, then detail shots of any issues.</p>
+            </div>
+            <p class="page-actions">
+              <a class="btn btn--primary" href="#">Upload photos</a>
+              <a class="btn btn--secondary" href="#">Mark issue</a>
+              <a class="btn btn--ghost" href="03-room-list.html">Room looks good</a>
             </p>
-            <p class="wf-field">
-              <label for="note">Issue note</label>
-              <textarea class="wf-input" id="note" rows="3" readonly>Pre-existing scratch on counter near sink</textarea>
-            </p>
-          </section>
+          </header>
 
-          <section>
-            <p class="upload-zone">Drop photos here or click Upload</p>
-            <section class="wf-grid-photos" aria-label="Photos">
-              <figure class="wf-img sm">Wide 9:12</figure>
-              <figure class="wf-img sm">+ add</figure>
-              <figure class="wf-img sm">+ add</figure>
-              <figure class="wf-img sm">Close-up</figure>
-              <figure class="wf-img sm">+ add</figure>
-              <figure class="wf-img sm">+ add</figure>
+          <section class="capture-layout">
+            <section>
+              <p class="field">
+                <label>What you're documenting</label>
+              </p>
+              <p class="chips">
+                <span class="chip active">Walls</span>
+                <span class="chip">Floors</span>
+                <span class="chip">Ceiling</span>
+                <span class="chip">Windows</span>
+                <span class="chip">Appliances</span>
+                <span class="chip">Cabinets</span>
+                <span class="chip">Fixtures</span>
+              </p>
+              <p class="field">
+                <label for="note">Issue note</label>
+                <textarea class="input input--textarea" id="note" readonly>Pre-existing scratch on counter near sink</textarea>
+              </p>
+            </section>
+
+            <section>
+              <span class="ph ph--upload" aria-label="Upload area"></span>
+              <section class="photo-grid" style="margin-top:16px">
+                <span class="ph ph--thumb ph--thumb-square"></span>
+                <span class="ph ph--thumb ph--thumb-square"></span>
+                <span class="ph ph--thumb ph--thumb-square"></span>
+                <span class="ph ph--thumb ph--thumb-square"></span>
+                <span class="ph ph--thumb ph--thumb-square"></span>
+                <span class="ph ph--thumb ph--thumb-square"></span>
+              </section>
             </section>
           </section>
         </section>
