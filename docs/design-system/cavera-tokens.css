@@ -1,0 +1,54 @@
+/**
+ * Cavera wireframe tokens — derived from wineurya/pf (src/styles/tokens.css)
+ * Inter fallback when display/body stacks unavailable.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,510;14..32,590;14..32,600;14..32,700&display=swap");
+
+:root {
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Portfolio marketing / product blue */
+  --wx-primary: #2563eb;
+  --wx-primary-hover: #1d4ed8;
+  --wx-primary-soft: color-mix(in srgb, var(--wx-primary) 12%, #ffffff);
+  --wx-page-bg: #ffffff;
+  --wx-muted: oklch(0.51111 0 0);
+  --wx-muted-2: oklch(0.61333 0 0);
+  --wx-ink: oklch(0.20444 0 0);
+  --wx-ink-secondary: oklch(0.40889 0 0);
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: oklch(0.985 0 0);
+  --color-neutral-100: oklch(0.96 0 0);
+  --color-neutral-200: oklch(0.92 0 0);
+  --color-neutral-400: oklch(0.71556 0 0);
+  --color-neutral-600: oklch(0.51111 0 0);
+  --color-neutral-900: oklch(0.20444 0 0);
+
+  --color-success-500: oklch(0.62 0.2 145);
+  --color-warning-500: oklch(0.72 0.2 75);
+  --color-error-500: oklch(0.6 0.24 25);
+
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-pill: 624.9375rem;
+
+  --layout-gutter: clamp(1rem, 4vw, 3rem);
+  --layout-max-width: 80rem;
+  --content-narrow: 32.5rem;
+
+  --placeholder: rgba(0, 0, 0, 0.12);
+  --shadow-elevated: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+}

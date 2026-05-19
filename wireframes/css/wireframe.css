@@ -1,35 +1,32 @@
-/* Cavera — medium-fidelity web wireframes
-   Mobbin refs: Pipedrive, Gusto, Mercury, Airbnb, Peerspace, Confluence, PandaDoc
-   Image placeholders: 12% black (rgba(0,0,0,.12)) — no labels inside */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* Cavera — medium-fidelity web wireframes (wineurya/pf tokens + Mobbin patterns) */
+@import url("../../docs/design-system/cavera-tokens.css");
 
 :root {
-  --font: "Inter", system-ui, -apple-system, sans-serif;
-  --bg: #f7f7f8;
-  --surface: #ffffff;
-  --ink: #111827;
-  --muted: #6b7280;
-  --muted-2: #9ca3af;
-  --line: #e5e7eb;
-  --accent: #1b4332;
-  --accent-hover: #2d6a4f;
-  --accent-soft: #d8f3dc;
-  --warn-soft: #fff7ed;
+  --font: var(--font-body);
+  --bg: var(--color-neutral-100);
+  --surface: var(--color-neutral-0);
+  --ink: var(--wx-ink);
+  --muted: var(--wx-muted);
+  --muted-2: var(--wx-muted-2);
+  --line: var(--color-neutral-200);
+  --accent: var(--wx-primary);
+  --accent-hover: var(--wx-primary-hover);
+  --accent-soft: var(--wx-primary-soft);
+  --warn-soft: color-mix(in srgb, var(--color-warning-500) 10%, white);
   --warn-ink: #9a3412;
-  --ok-soft: #ecfdf5;
+  --ok-soft: color-mix(in srgb, var(--color-success-500) 10%, white);
   --ok-ink: #047857;
   --placeholder: rgba(0, 0, 0, 0.12);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-md: var(--shadow-elevated);
   --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-full: 999px;
+  --radius-sm: var(--radius-lg);
+  --radius-md: var(--radius-xl);
+  --radius-lg: var(--radius-2xl);
+  --radius-full: var(--radius-pill);
   --sidebar-w: 260px;
   --header-h: 64px;
-  --content-max: 720px;
+  --content-max: var(--content-narrow);
 }
 
 *,
@@ -217,9 +214,9 @@ button {
 }
 
 .mkt-hero {
-  max-width: 1200px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: 48px 32px 80px;
+  padding: var(--spacing-12) var(--layout-gutter) var(--spacing-16);
   display: grid;
   gap: 48px;
   align-items: center;
@@ -488,7 +485,7 @@ button {
 /* Main */
 .app-main {
   flex: 1;
-  padding: 32px 40px 48px;
+  padding: var(--spacing-8) var(--spacing-10) var(--spacing-12);
   overflow: auto;
 }
 
@@ -560,9 +557,9 @@ button {
 /* Cards */
 .card {
   background: var(--surface);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
-  padding: 28px 32px;
+  padding: var(--spacing-6) var(--spacing-8);
 }
 
 .card--form {
