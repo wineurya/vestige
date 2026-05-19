@@ -1,53 +1,59 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>01 Home | Cavera wireframe</title>
+  <title>01 Marketing home | Cavera</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
-  <nav class="wf-toolbar">
+  <nav class="wf-prototype">
     <a href="index.html">Hub</a>
-    <span>01 / 06 Home</span>
+    <strong>01 / 06</strong> Marketing home
     <a href="02-create-report.html">Next</a>
   </nav>
-  <div class="wf-stage">
-    <article class="phone">
-      <div class="phone-notch"><span></span></div>
-      <div class="phone-body">
-        <p class="wf-label">Landing (mobile web)</p>
-        <p class="wf-anno">Mobbin ref: Fireflies value-prop list + Craft hero CTA</p>
 
-        <p style="font-weight:800;font-size:1.1rem;margin:0 0 1rem">CAVERA</p>
-
-        <h1 class="wf-hero">Protect your deposit in one walkthrough</h1>
-        <p class="wf-lead">Take guided room photos, note damage, and export a timestamped PDF.</p>
-
-        <div class="wf-box solid">
-          <p class="wf-label" style="margin-bottom:0.5rem">Why renters use Cavera</p>
-          <ul style="margin:0;padding-left:1.1rem;font-size:0.9rem;color:var(--muted)">
-            <li>Guided room prompts (not a messy camera roll)</li>
-            <li>Timestamped photos + notes in one packet</li>
-            <li>Works in your browser â€” no app install</li>
-            <li>Photos stay on your device until you export</li>
-          </ul>
-        </div>
-
+  <section class="site">
+    <header class="site-header">
+      <span class="site-logo">CAVERA</span>
+      <nav class="site-nav">
+        <a href="#">How it works</a>
+        <a href="#">Privacy</a>
         <a class="wf-btn accent" href="02-create-report.html">Start free report</a>
-        <a class="wf-btn secondary" href="04-capture-room.html">Use photos I already have</a>
+      </nav>
+    </header>
 
-        <div class="wf-trust">
+    <section class="landing-hero">
+      <section class="hero-copy">
+        <h1>Protect your deposit in one walkthrough</h1>
+        <p class="lead">Take guided room photos, note damage, and export a timestamped PDF in your browser.</p>
+        <ul class="hero-bullets">
+          <li>Guided room prompts, not a messy camera roll</li>
+          <li>Timestamped photos and notes in one packet</li>
+          <li>No install. No account to start.</li>
+          <li>Photos stay on your device until you export</li>
+        </ul>
+        <p class="hero-ctas">
+          <a class="wf-btn accent" href="02-create-report.html">Start free report</a>
+          <a class="wf-btn secondary" href="04-capture-room.html">Use photos I already have</a>
+        </p>
+        <p class="wf-trust">
           <span>No account to start</span>
           <span>Local-first</span>
           <span>PDF in minutes</span>
-        </div>
+        </p>
+      </section>
 
-        <p class="wf-label" style="margin-top:1.5rem">Footer (optional)</p>
-        <p style="font-size:0.75rem;color:var(--muted);margin:0">Privacy Â· Delete report Â· Not legal advice</p>
-      </div>
-    </article>
-  </div>
+      <aside class="hero-visual">
+        <p class="browser-chrome" aria-hidden="true"></p>
+        <section class="browser-body">
+          <p class="wf-label">In-app preview</p>
+          <p class="preview-mock">Sidebar + room grid (app shell)</p>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="site-footer">Privacy · Delete report · Not legal advice</footer>
+  </section>
 </body>
 </html>
-

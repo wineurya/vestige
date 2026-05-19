@@ -1,66 +1,58 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cavera - Wireframe hub</title>
+  <title>Cavera — Wireframe hub</title>
   <link rel="stylesheet" href="css/wireframe.css" />
 </head>
 <body>
   <main class="hub">
-    <p class="wf-label">Low-fidelity MVP | Mobile web</p>
+    <p class="wf-label">Low-fidelity wireframes · Web app</p>
     <h1>Cavera</h1>
-    <p class="tagline">Renter-owned deposit evidence packets. Guided walkthrough, timestamped PDF, no install.</p>
+    <p class="tagline">Desktop-first web application. Responsive in the browser — marketing site plus app shell with sidebar.</p>
 
-    <div class="hub-grid">
+    <section class="hub-grid">
       <section class="panel">
-        <h2>Screens</h2>
+        <h2>Views</h2>
         <ol class="screen-list">
           <li>
-            <a href="01-home.html">01 - Home (landing)</a>
-            <span>Hero, trust bullets, dual CTA. Ref: Craft, Fireflies (Mobbin)</span>
+            <a href="01-home.html">01 — Marketing home</a>
+            <span>Public site: nav, split hero, footer</span>
           </li>
           <li>
-            <a href="02-create-report.html">02 - Create report</a>
-            <span>Move-in/out, state, address. No account</span>
+            <a href="02-create-report.html">02 — Create report</a>
+            <span>App: top stepper + centered form</span>
           </li>
           <li>
-            <a href="03-room-list.html">03 - Room list</a>
-            <span>Progress + room cards. Ref: Chime setup, Liven (Mobbin)</span>
+            <a href="03-room-list.html">03 — Room overview</a>
+            <span>App: sidebar + room card grid</span>
           </li>
           <li>
-            <a href="04-capture-room.html">04 - Capture room</a>
-            <span>Photo grid, area chips, issue tagging. Ref: Outlook Real Estate (Mobbin)</span>
+            <a href="04-capture-room.html">04 — Capture room</a>
+            <span>App: sidebar + two-column workspace</span>
           </li>
           <li>
-            <a href="05-review.html">05 - Review</a>
-            <span>Flags, summary. Ref: Manus task progress (Mobbin)</span>
+            <a href="05-review.html">05 — Review</a>
+            <span>App: flags + data table</span>
           </li>
           <li>
-            <a href="06-export.html">06 - Export</a>
-            <span>PDF preview, download, email. Ref: Alan, Chime (Mobbin)</span>
+            <a href="06-export.html">06 — Export</a>
+            <span>App: PDF preview + action panel</span>
           </li>
         </ol>
       </section>
 
       <section class="panel">
-        <h2>Core flow</h2>
-        <pre class="flow-pre">Landing -&gt; Start report
-  -&gt; Move-in | Move-out + address
-  -&gt; Room list (presets)
-  -&gt; Capture (wide shot -&gt; issues -&gt; OK)
-  -&gt; Review (flags)
-  -&gt; PDF export -&gt; success</pre>
-        <p class="mobbin-ref" style="margin-top:1rem">
-          Pattern references:
-          <a href="../docs/mobbin-references.md">docs/mobbin-references.md</a>.
-          Product brief:
-          <a href="../docs/product-brief.md">docs/product-brief.md</a>.
-        </p>
+        <h2>Routes (planned)</h2>
+        <pre class="flow-pre">/                 marketing home
+/start            create report
+/report/:id       rooms overview
+/report/:id/:room capture
+/report/:id/review
+/report/:id/export</pre>
       </section>
-    </div>
+    </section>
   </main>
 </body>
 </html>
-
-
