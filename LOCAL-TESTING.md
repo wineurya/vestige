@@ -1,11 +1,18 @@
-# Local testing
-
-The **Documents** copy is the recommended sandbox for browser testing:
+# Local testing (Documents)
 
 ```
-C:\Users\Wineury Almonte\Documents\vestige
+C:\Users\Wineury Almonte\Documents\cavera
 ```
 
-That folder includes `open-wireframes.ps1` to launch the hub in your default browser.
+## Open wireframes
 
-This repo (`wireframes/`) is the source of truth pushed to GitHub.
+```powershell
+.\open-wireframes.ps1
+```
+
+Or:
+
+```powershell
+cd wireframes
+npx --yes serve .
+```

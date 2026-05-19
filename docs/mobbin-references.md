@@ -1,6 +1,6 @@
-﻿# Mobbin UI references
+# Mobbin UI references
 
-Patterns used to inform Vestige low-fidelity wireframes (searched via Mobbin MCP, May 2026).
+Patterns used to inform Cavera low-fidelity wireframes (searched via Mobbin MCP, May 2026).
 
 ## Landing / value prop
 
@@ -44,4 +44,4 @@ Patterns used to inform Vestige low-fidelity wireframes (searched via Mobbin MCP
 
 ## Differentiation note
 
-MoveOut Shield (iOS) already owns local PDF + room templates. Vestige wireframes emphasize **mobile web**, **no install**, and **faster path to first export** per research report.
+MoveOut Shield (iOS) already owns local PDF + room templates. Cavera wireframes emphasize **mobile web**, **no install**, and **faster path to first export** per research report.

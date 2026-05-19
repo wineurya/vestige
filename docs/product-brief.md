@@ -1,6 +1,6 @@
-﻿# Vestige — product brief
+# Cavera — product brief
 
-Master decisions sourced from the Proof MVP research report. **Vestige** is the product name: one word — the trace of how a unit looked before you left — not a compound like Stamp-out, Move-out, or Deposit-shield.
+Master decisions sourced from the Proof MVP research report. **Cavera** is the product name: one invented word (not a compound like Stamp-out or Move-out Shield) for the record you leave behind when you hand back the keys.
 
 ## Positioning
 
