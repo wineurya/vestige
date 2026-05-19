@@ -1,4 +1,4 @@
-# Stampout
+﻿# Stampout
 
 **Protect your deposit before the argument starts.**
 
@@ -6,7 +6,17 @@ Stampout is a renter-owned evidence packet tool: guided room-by-room photos, iss
 
 This repository contains the **MVP low-fidelity wireframes** and product documentation for the one-day build described in the research brief.
 
-## View wireframes
+## Local testing folder (Documents)
+
+For day-to-day browser testing, use the copy in Documents:
+
+```
+C:\Users\Wineury Almonte\Documents\vestige
+```
+
+See [LOCAL-TESTING.md](LOCAL-TESTING.md) there, or run `open-wireframes.ps1` to launch the hub.
+
+## View wireframes (repo)
 
 Open locally in any browser:
 
